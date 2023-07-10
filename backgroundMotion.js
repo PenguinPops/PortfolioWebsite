@@ -18,13 +18,20 @@ for (let i = 0; i < numStars; i++) {
 function drawStars() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  const scrollY = window.pageYOffset;
+  const scrollY = window.scrollY;
 
   stars.forEach(star => {
     const { x, y, radius, brightness } = star;
 
     // Update star position based on scroll
-    const newY = (y + scrollY * 0.005) % canvas.height;
+    let newY; // Declare the variable outside the if-else statement
+
+    if (scrollY < 2000) {
+      newY = (y + scrollY * 0.005) % canvas.height;
+    } else {
+      newY = (y + 2000 * 0.005) % canvas.height;
+    }
+    
 
     ctx.beginPath();
     ctx.arc(x, newY, radius, 0, Math.PI * 2);
