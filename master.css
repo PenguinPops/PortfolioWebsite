@@ -13,18 +13,18 @@ body{
   background-color: black;
   overflow-x: hidden;
 }
-@media (max-width: 5000px) {
-    #container {
-        margin: auto;
-        position: relative;
-        width: 1900px;
-        height: 3860px;
-        /* background-color: rgba(0, 0, 0, 0.8); */
-        z-index: 1;
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
-        scrollbar-width: none;  /* Firefox */
-    }
+    
+#container {
+    margin: auto;
+    position: relative;
+    width: 100vw;
+    height: 200vw;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    z-index: 1;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
+
 
 
 #container::-webkit-scrollbar { 
@@ -63,13 +63,11 @@ body{
 
 .logo h1 {
     height: 100%;
-    width: auto;
+    width: 60%;
     /* background-color: aqua; */
     padding: 5.5% 0 0 0;
     cursor:default;
 }
-
-
 
 .nav-wrap {
     height: 100%;
@@ -574,4 +572,13 @@ body{
 
 #copyright p {
     font-size: 3em;
+}
+
+.overlay {
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay img {
+    width:100%;
+    height:100%;
 }

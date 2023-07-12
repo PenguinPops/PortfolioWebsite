@@ -10,4 +10,5 @@ window.addEventListener('scroll', function() {
     text.style.transform = 'translateX(' + newY + 'em)';
     text2.style.transform = 'translateX(' + (newY*-1) + 'em)';
     text3.style.transform = 'translateX(' + newY + 'em)';
-  });
+
+});
