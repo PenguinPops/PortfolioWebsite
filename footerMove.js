@@ -14,4 +14,5 @@ window.addEventListener('scroll', function() {
     img.style.marginLeft = -16 + 2*move + 'vh';
     title.style.opacity = 0.2+0.5*move;
     insidetxt.style.opacity = 0.5*move;
+    img.style.opacity = 0.5*move;
 });
