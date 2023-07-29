@@ -540,6 +540,7 @@ body{
     transition: background-color 0.5s ease;
     transition: scale 0.5s ease;
     cursor:default;
+    font-size: 0.23vw;
 }
 
 .button-container:hover {
