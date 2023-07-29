@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="master.css">
     <script src="https://kit.fontawesome.com/0f8a7624aa.js" crossorigin="anonymous"></script>
     <script>
-        window.onload = function() {
-            window.scrollTo(0, 0);
-        };
+        // window.onload = function() {
+        //     window.scrollTo(0, 0);
+        // };
         function scrollToY(scrollY) {
             window.scrollTo({
                 top: scrollY,
@@ -111,7 +111,7 @@
                     <div class="project-desc">Personal use electron app for the desktop</div>
                 </div>
                 <div class="grid-line"></div>
-                <div class="grid-bottom">
+                <div class="grid-bottom" onclick="openURLInNewTab('https://github.com/PenguinPops/Format-C-UI-app')">
                     Check Link
                     <span class="material-symbols-outlined">expand_circle_down</span>
                 </div>
@@ -181,7 +181,7 @@
                     <div class="project-desc">Design and coding</div>
                 </div>
                 <div class="grid-line"></div>
-                <div class="grid-bottom">
+                <div class="grid-bottom" onclick="openURLInNewTab('https://penguinpops.github.io/PortfolioWebsite/')">
                     Check Link
                     <span class="material-symbols-outlined">expand_circle_down</span>
                 </div>
@@ -198,24 +198,27 @@
                     <div class="project-desc">Ongoing projects</div>
                 </div>
                 <div class="grid-line"></div>
-                <div class="grid-bottom">
+                <div class="grid-bottom" onclick="openURLInNewTab('https://github.com/PenguinPops')">
                     Check Link
                     <span class="material-symbols-outlined">expand_circle_down</span>
                 </div>
             </div>
         </section>
         <script src="grid.js"></script>
+        <div id="divider"></div>
         <footer id="footer">
             <div id="footer-left-image">
                 <img id="footerImg" src="./Media/pic.png">
             </div>
             <div id="footer-center-box">
-                <h2 id="center-h2">Personal interests</h2>
-                <div class="center-text">
-                    <p class="center-p">&#x2022; PC building</p>
-                    <p class="center-p">&#x2022; Video editing</p>
-                    <p class="center-p">&#x2022; Photo editing</p>
-                    <p class="center-p">&#x2022; Electronics repair</p>
+                <div id="center-text">
+                    <p id="title-p">Hi, I'm Michal.</p>
+                    <p id="center-p">With a background in IT, computer servicing and editing I am a well-rounded and experienced individual.
+                        I am working on several software development projects, as well as exploring the world of AI through its
+                        usage in my programming workflow. Alongside those, I edit videos professionally, edit and color-grade photos.
+                        I also do UI/UX experiences for the Web. I'm a hard-working person, relentless when it comes to deadlines,
+                        always set on achieving the desired goal. I consider myself a team player, owing it to my sharp social skills.
+                    </p>
                 </div>
             </div>
             <script src="footerMove.js"></script>
