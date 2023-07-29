@@ -12,7 +12,4 @@ window.addEventListener('scroll', function() {
     insidetxt.style.marginLeft = 5 - move + 'vh';
     title.style.marginRight = 30 + 3*move + 'vh';
     img.style.marginLeft = -16 + 2*move + 'vh';
-    title.style.opacity = 0.2+0.5*move;
-    insidetxt.style.opacity = 0.5*move;
-    img.style.opacity = 0.5*move;
 });
