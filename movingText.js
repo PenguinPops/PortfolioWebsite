@@ -6,9 +6,11 @@ window.addEventListener('scroll', function() {
   
     // Update text position based on scroll
     var newY = (scrollY * 0.008) % window.innerHeight;
+    newY *= 10;
   
-    text.style.transform = 'translateX(' + newY + 'em)';
-    text2.style.transform = 'translateX(' + (newY*-1) + 'em)';
-    text3.style.transform = 'translateX(' + newY + 'em)';
+    text.style.transform = 'translateX(' + newY + 'vw)';
+    text2.style.transform = 'translateX(' + (newY*-1) + 'vw)';
+    newY *= 9/10;
+    text3.style.transform = 'translateX(' + newY + 'vw)';
 
 });
