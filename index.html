@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="master.css">
     <script src="https://kit.fontawesome.com/0f8a7624aa.js" crossorigin="anonymous"></script>
     <script>
-        // window.onload = function() {
-        //     window.scrollTo(0, 0);
-        // };
-        function scrollToY(scrollY) {
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+        function scrollToVW(vwValue) {
+            const vw = window.innerWidth;
+            const pxValue = (vwValue * vw) / 100;
             window.scrollTo({
-                top: scrollY,
+                top: pxValue,
                 behavior: 'smooth'
             });
         }
@@ -42,9 +44,9 @@
             </div>
         </header>
         <section id="mainContent">
-            <div id="scrolling-text" onclick="scrollToY(5400)">Web Development</div>
-            <div id="scrolling-text-2" onclick="scrollToY(5400)">C++/C# Programming</div>
-            <div id="scrolling-text-3" onclick="scrollToY(5400)">Video editing</div>
+            <div id="scrolling-text" onclick="scrollToVW(285)">Web Development</div>
+            <div id="scrolling-text-2" onclick="scrollToVW(285)">C++/C# Programming</div>
+            <div id="scrolling-text-3" onclick="scrollToVW(285)">Video editing</div>
             <script src="movingText.js"></script>
         </section>
         <section id="color-fill-section">
@@ -221,6 +223,7 @@
                         of my English as a native speaker in that language.
                     </p>
                 </div>
+                <object data="./Media/2.svg" type="image/svg+xml" id="svg-object"></object>
             </div>
             <script src="footerMove.js"></script>
         </footer>
