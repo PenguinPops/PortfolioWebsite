@@ -601,8 +601,8 @@ body{
 }
 
 #svg-object {
-    width: 15vw; /* Set the desired width of the SVG */
-    height: 10vw; /* Let the height adjust proportionally */
+    width: 10vw; /* Set the desired width of the SVG */
+    height: 8vw; /* Let the height adjust proportionally */
     /* background-color: white; */
     fill: white;
     stroke: white;
