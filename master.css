@@ -550,12 +550,12 @@ body{
 }
 
 .fa-solid, .fa-brands{
-    font-size:5em;
+    font-size:1.3vw;
     margin-right:1em;
 }
 
 .fa-regular {
-    font-size:3em;
+    font-size:1vw;
     margin-right:0.5em;
 }
 
