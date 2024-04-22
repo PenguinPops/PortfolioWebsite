@@ -26,11 +26,15 @@ function showEffect(event, imageSrc, index) {
   }
 
   square.style.top = `${event.clientY}px`; 
-
+  
+  square.style.opacity = '0';
+  
   document.body.appendChild(square);
+  square.style.opacity = '1';
 }
 
 function hideEffect() {
   const square = document.querySelector('.rounded-square');
+  square.style.opacity = '0';
   document.body.removeChild(square);
 }

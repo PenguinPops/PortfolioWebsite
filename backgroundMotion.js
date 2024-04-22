@@ -4,6 +4,11 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+function getsizes() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
 const numStars = 140;
 const stars = [];
 
@@ -16,6 +21,7 @@ for (let i = 0; i < numStars; i++) {
 }
 
 function drawStars() {
+  getsizes();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   const scrollY = window.scrollY;

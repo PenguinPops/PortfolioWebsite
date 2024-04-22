@@ -108,14 +108,12 @@ body{
 }
 
 
-#scrolling-text {
+.st {
     position: relative;
     top: 1em;
-    left: -0.8em;
-    width: 10em;
+    width: 400vw;
     height: 4em;
-    font-size: 30em;
-    overflow: hidden;
+    font-size: 15em;
     white-space: nowrap;
     z-index: 1;
     transition: background-color 0.5s ease;
@@ -123,62 +121,23 @@ body{
     padding-top:1.2em;
     text-align: center;
     cursor:default;
+    opacity: 0.8;
 }
 
-#scrolling-text:hover {
-    background-color: rgba(186, 223, 255, 0.724);
+.st:nth-child(1),
+.st:nth-child(3) {
+    left: -200vw;
 }
 
-#scrolling-text-2 {
-    /* background-color: blue; */
-    text-align: right;
-    position: relative;
-    top: 2em;
-    left: 8em;
-    right: -8em;
-    width: 14em;
-    height: 4em;
-    font-size: 30em;
-    overflow: hidden;
-    white-space: nowrap;
-    z-index: 1;
-    transition: background-color 0.5s ease;
-    border-radius: 2em;
-    padding-top:1.2em;
-    text-align: center;
-    cursor:default;
+.st:nth-child(3) {
+    left: -230vw;
 }
 
-#scrolling-text-2:hover {
-    background-color: rgba(255, 186, 253, 0.724);
-}
-
-#scrolling-text-3 {
-    position: relative;
-    top: 3em;
-    left: -12em;
-    width: 10em;
-    height: 4em;
-    font-size: 30em;
-    overflow: hidden;
-    white-space: nowrap;
-    z-index: 1;
-    transition: background-color 0.5s ease;
-    border-radius: 2em;
-    padding-top: 1.2em;
-    text-align: center;
-    cursor:default;
-}
-
-#scrolling-text-3:hover {
-    background-color: rgba(224, 255, 186, 0.724);
-}
 
 #color-fill-section {
     width: 200%;
     height: 80%;
     border-radius: 50%;
-    margin-top: 30vw;
     z-index: 2;
     display:flex;
     align-items: center;
@@ -272,6 +231,18 @@ body{
     margin-left: 3%;
 }
 
+
+.featured {
+    width: 80%;
+    margin-left: 10%;
+    height: 30%;
+    /* background-color: rgba(29, 29, 29, 0.641); */
+    padding: 7%;
+}
+.featured h2 {
+    margin-bottom: 2%;
+}
+
 #portfolio-grid {
     width: 100%;
     height: auto;
@@ -300,6 +271,24 @@ body{
     background-size: cover;
     background-position: center;
 }
+.gi1 {
+    border-radius: 2em;
+    background-color: rgba(222, 222, 222, 0.676);
+    padding: 2vw;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    transition: scale 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: none;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
 
 .grid-item:hover {
     scale: 1.03;
@@ -322,17 +311,22 @@ body{
 
 .grid-bubble {
     width:auto;
+    display: flex;
+    align-items: center;
     margin-right: 0.5%;
     padding-left: 3%;
     padding-right: 3%;
-    padding-bottom: 3%;
     height:100%;
     background-color: rgba(0, 0, 0, 0.485);
     border: 0.1em solid white;
     color: white;
     border-radius: 6em;
-    font-size: 2.6em;
+    font-size: 0.7vw;
     text-align: center;
+}
+
+.feat-bub {
+    font-size: 1vw;
 }
 
 .project-logo {
@@ -342,6 +336,21 @@ body{
     margin: auto;
     margin-top: 25%;
 }
+.plsq img {
+    width: 6vw;
+    height: 6vw;
+}
+
+.plw img {
+    width: 12vw;
+    height: 6vw;
+}
+
+.plt img {
+    width: 9vw;
+    height: 6vw;
+}
+
 
 .project-title {
     text-align: left;
@@ -420,14 +429,17 @@ body{
     margin-right: 0.5em;
     transform: rotate(270deg);
     scale: 2;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
+    font-size: 100%;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48 
+    }
 
-.grid-item:nth-child(1){
+
+
+.gi2{
     color: white;
     background-image: url("./Media/formatCbackground.png");
 }
@@ -450,6 +462,11 @@ body{
 .grid-item:nth-child(5){
     color: white;
     background-image: url("./Media/stars.jpg");
+}
+
+.grid-item:nth-child(6){
+    background: rgb(207,207,207);
+    background: radial-gradient(circle, rgba(207,207,207,0.8) 0%, rgba(201,0,0,0.8) 48%, rgba(113,0,26,0.8) 100%); 
 }
 
 #footer {
@@ -612,4 +629,27 @@ body{
 
 #selection {
     fill:white;
+}
+
+.rounded-square {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    animation: floatAnimation 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+
+  #scrolling-text,
+#scrolling-text-2,
+#scrolling-text-3 {
+    transition: transform 2s ease; /* Smooth transition */
 }
