@@ -110,7 +110,6 @@ body{
 
 .st {
     position: relative;
-    top: 1em;
     width: 400vw;
     height: 4em;
     font-size: 15em;
@@ -118,11 +117,13 @@ body{
     z-index: 1;
     transition: background-color 0.5s ease;
     border-radius: 2em;
-    padding-top:1.2em;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
     text-align: center;
     cursor:default;
     opacity: 0.8;
 }
+
 
 .st:nth-child(1),
 .st:nth-child(3) {
@@ -199,13 +200,13 @@ body{
     align-items: center;
 }
 .max-prog-2 {
-    width:90%;
+    width:95%;
     height:100%;
     display:flex;
     align-items: center;
 }
 .max-prog-3 {
-    width:60%;
+    width:80%;
     height:100%;
     display:flex;
     align-items: center;
@@ -235,7 +236,6 @@ body{
 .featured {
     width: 80%;
     margin-left: 10%;
-    height: 30%;
     /* background-color: rgba(29, 29, 29, 0.641); */
     padding: 7%;
 }
@@ -441,12 +441,12 @@ body{
 
 .gi2{
     color: white;
-    background-image: url("./Media/formatCbackground.png");
+    background-image: url("./Media/formatCbackground.jpg");
 }
 
 .grid-item:nth-child(2){
     color: white;
-    background-image: url("./Media/pongback.png");
+    background-image: url("./Media/pongback.jpg");
 }
 
 .grid-item:nth-child(3){
@@ -481,7 +481,14 @@ body{
     width:50%;
     height:100%;
     opacity: 0.4;
-    margin-top:2vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#footerImg {
+    width: 80%;
+    border-radius: 4vw;
 }
 
 #footer-center-box {
